@@ -5,10 +5,13 @@ class BaseError(Exception):
 class UnknownError(BaseError):
     pass
 
-
-class TokenRequired(BaseError):
+class ClientRequired(BaseError):
     pass
 
+class SecretRequired(BaseError):
+    pass
+class TokenRequired(BaseError):
+    pass
 
 class BadRequest(BaseError):
     pass

@@ -1,4 +1,4 @@
-from microsoftgraph.exceptions import TokenRequired
+from . import exceptions
 from functools import wraps
 
 
@@ -7,7 +7,7 @@ def token_required(func):
     def helper(*args, **kwargs):
         client = args[0]
         if not client.token:
-            raise TokenRequired('You must set the Token.')
+            raise exceptions.TokenRequired('You must set the Token.')
         return func(*args, **kwargs)
 
     return helper

@@ -6,16 +6,16 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 
-setup(name='microsoftgraph-python',
-      version='0.1.7',
+setup(name='msgraph',
+      version='0.2',
       description='API wrapper for Microsoft Graph written in Python',
       long_description=read('README.md'),
-      url='https://github.com/GearPlug/microsoftgraph-python',
+      url='https://github.com/sjc-syjupl/msgraph',
       long_description_content_type="text/markdown",
-      author='Miguel Ferrer, Nerio Rincon, Yordy Gelvez',
-      author_email='ingferrermiguel@gmail.com',
+      author='Sylwester Jurczyk, Miguel Ferrer, Nerio Rincon, Yordy Gelvez',
+      author_email='syjupl@gmail.com',
       license='MIT',
-      packages=['microsoftgraph'],
+      packages=['msgraph'],
       install_requires=[
           'requests',
       ],
