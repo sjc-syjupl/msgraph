@@ -13,6 +13,7 @@ import json
 config = json.loads(open('config.json').read())
 
 client = Client(config=config)
+# client.auth_by_password("Notes.Read.All")
 client.auth_by_secret_id()
 
 print(client.token)
